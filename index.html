@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AI Prisoner's Dilemma</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="content" class="main">
+    <div id="header">
+      <h2>
+        AI Prisoner's Dilemma
+      </h2>
+    </div>
+    <div id="rules">
+      You are playing the <b>Prisoner's Dilemma game</b> with an AI agent. You have two choices: "Cooperate" or "Defect". There are four possible outcomes: 
+      <ul>
+        <li>If you choose "Cooperate", and the RL agent does too, you'll <b>both get +60 score</b>.</li>
+        <li>If you choose "Cooperate", and the RL agent chooses "Defect", <b>you get -50 score</b>, and <b>the RL agent gets +145 score</b>.</li>
+        <li>Similarly, if you choose "Defect", and the RL agent chooses "Cooperate", <b>you get +145 score</b>, and <b>the RL agent gets -50 score</b>.</li>
+        <li>If you choose "Defect", and the RL agent does too, you'll <b>both get +10 score</b>.</li>
+      </ul>
+      This game will run for 10 rounds. The grids below will update based on the AI's decision - <b>green meaning "Cooperate" and red meaning "Defect"</b>. Yours and the AI's total score as the game progresses will also be shown below. 
+    </div>
+    <div class="dropdown">
+      <button onclick="dropdownTrigger()" class="dropbtn" id="dropdown-text">Choose your Mode</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#" id='tft-button'>Tit for Tat</a>
+        <a href="#" id='detective-button'>Detective</a>
+        <a href="#" id='gt-button'>Grim Trigger</a>
+      </div>
+    </div>
+    <div id="gameplay">
+      
+    </div>
+    <div id="gamehistory">
+
+    </div>
+    <div id="tally">
+      
+    </div>
+    <div id="popup">
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
